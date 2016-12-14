@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            NodeJS
+        </title>
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div>
+            <form action="/search" method="post" id="formSearch">
+                <label>Id:</label>
+                <input type="number" name="searchId" id="searchId" placeholder="es. 2"/>
+                <input type="submit" value="Search!" />
+            </form>
+            <form action="/remove" method="post" id="formRemove">
+                <label>Id:</label>
+                <input type="number" name="removeId" id="removeId" placeholder="es. 2"/>
+                <input type="submit" name="remove" id="remove" value="Remove!"/>
+            </form>
+        </div>
+        <input type="button" value="Show/Hide form!" onclick="sHform();clearForm();"/>
+        <form action="/work" method="post" id="formInputData" class="<%= hid %>">
+            <input type="number" name="id" placeholder="es. 2" id="id" value="<%= person.Id %>" /><br>
+            <input type="text" name="name" placeholder="es. tizio" id="name" value="<%= person.Name %>" /><br>
+            <input type="text" name="surname" placeholder="es. caio" id="surname" value="<%= person.Surname %>" /><br>
+            <input type="number" name="level" placeholder="es. 7" id="level" value="<%= person.Level %>" /><br>
+            <input type="number" name="salary" placeholder="es. 1223" id="salary" value="<%= person.Salary %>" /><br>
+            <input type="submit" value="Add/Modify person" />
+        </form>
+        <script type="text/javascript" src="/js/script.js"></script>
+    </body>
+</html>

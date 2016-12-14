@@ -1,0 +1,27 @@
+{
+  "name": "prova",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Nik9510@github.com/Nik9510/provaHeroku.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nik9510/provaHeroku/issues"
+  },
+  "homepage": "https://github.com/Nik9510/provaHeroku#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "jasmine": "^2.5.2",
+    "request": "^2.79.0"
+  }
+}
